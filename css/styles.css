@@ -1,0 +1,36 @@
+
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+  
+.header {
+  background-color: teal;
+  color: #ffffff;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+}
+
+
+.main {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 150vh;
+  padding-top: 70px;
+}
+
+.header-unpin {
+  display: block;
+  transform: translateY(-65px);
+  transition: transform 0.25s ease-in-out;
+}
+.header-pin {
+  display: block;
+  transform: translateY(0);
+  transition: transform 0.25s ease-in-out;
+}
+
+
