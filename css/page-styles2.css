@@ -1,4 +1,10 @@
-
+body {
+  background-color:white;
+  color:black;
+  padding:0px;
+  margin:0px;
+  font-size:100%;
+}
 
 li, a, button {
   font-family:"montserat", sans-serif;
@@ -9,7 +15,7 @@ li, a, button {
 header {
   display:flex;
   justify-content:space-between;
-  background-color:#0F5298;
+  background-color:silver;
   align-items:center;
   padding-top:0px;
   padding-bottom:0px;
@@ -24,7 +30,10 @@ header {
 }
 .nav-links li {
   display:inline-block;
-  padding:0px, 50px;
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-right:30px;
+  padding-left:30px;
 }
 .nav-links li a {
   transition: all 0.3s ease 0;
