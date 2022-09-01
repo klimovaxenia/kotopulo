@@ -1,0 +1,84 @@
+
+body {
+  background-color:white;
+  color:black;
+  padding:0px;
+  margin:0px;
+  font-size:100%;
+}
+ .sm-header {
+  /*display:flex;*/
+  justify-content:space-between;
+  background-color:silver;
+  align-items:center;
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-right:10%;
+  padding-left:2%;
+  margin:0px;
+ }
+.sm-blue {
+  background: transparent;
+  }
+@media (min-width: 768px) {
+  /* Switch to desktop layout
+  -----------------------------------------------
+     These transform the menu tree from
+     collapsible to desktop (navbar + dropdowns)
+  -----------------------------------------------*/
+  /* start... (it's not recommended editing these rules) */
+  .sm-blue ul {
+    position: absolute;
+    width: 12em;
+  }
+
+  .sm-blue li {
+    float: left;
+  }
+
+  .sm-blue.sm-rtl li {
+    float: right;
+  }
+
+  .sm-blue ul li, .sm-blue.sm-rtl ul li, .sm-blue.sm-vertical li {
+    float: none;
+  }
+
+  .sm-blue a {
+    white-space: nowrap;
+  }
+
+  .sm-blue ul a, .sm-blue.sm-vertical a {
+    white-space: normal;
+  }
+
+  .sm-blue .sm-nowrap > li > a, .sm-blue .sm-nowrap > li > :not(ul) a {
+    white-space: nowrap;
+  }
+
+  /* ...end */
+
+body {
+  background-color:white;
+  color:black;
+  padding:0px;
+  margin:0px;
+  font-size:100%;
+}
+ .sm-header {
+  display:flex;
+  justify-content:space-between;
+  background-color:silver;
+  align-items:center;
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-right:10%;
+  padding-left:2%;
+  margin:0px;
+ }
+ .sm-blue li { 
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-right:30px;
+  padding-left:0px;
+ }

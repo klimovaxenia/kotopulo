@@ -1,8 +1,10 @@
+
 <html>
 <head>
 <meta name="viewport" content="width=device-width">
 <link href='css/sm-core-css.css' rel='stylesheet' type='text/css' />
-<link href='css/sm-blue.css' rel='stylesheet' type='text/css' />
+<link href='css/sm-mystyle.css' rel='stylesheet' type='text/css' />
+<link href='css/btn.css' rel='stylesheet' type='text/css' />
 
 <style>
 .red ul ul li a {color:red;}
@@ -15,13 +17,15 @@
 
 <body>
 
-<!-- Mobile menu toggle button (hamburger/x icon) -->
-<!-- input id="main-menu-state" type="checkbox" />
-<label class="main-menu-btn" for="main-menu-state">
-  <span class="main-menu-btn-icon"></span> Toggle main menu visibility
-</label -->
-<div>
+<div class="sm-header">
 <img class="logo" src="img/dwh-works-310x60.png" alt="DWH Works">
+
+
+<input id="main-menu-state" type="checkbox" />
+<label class="main-menu-btn" for="main-menu-state">
+  <span class="main-menu-btn-icon"></span> 
+</label>
+
 <ul id="main-menu" class="sm sm-blue logo">
 <!--img src="img/dwh-works-310x60.png" alt="DWH Works"-->
   <li><a href="#">Item 1</a></li>
@@ -58,26 +62,26 @@
     $('#main-menu').smartmenus();
   });
 
-//$(function() {
-//  var $mainMenuState = $('#main-menu-state');
-//  if ($mainMenuState.length) {
-//    // animate mobile menu
-//    $mainMenuState.change(function(e) {
-//      var $menu = $('#main-menu');
-//      if (this.checked) {
-//        $menu.hide().slideDown(250, function() { $menu.css('display', ''); });
-//      } else {
-//        $menu.show().slideUp(250, function() { $menu.css('display', ''); });
-//      }
-//    });
-//    // hide mobile menu beforeunload
-//    $(window).on('beforeunload unload', function() {
-//      if ($mainMenuState[0].checked) {
-//        $mainMenuState[0].click();
-//      }
-//    });
-//  }
-//});
+$(function() {
+  var mainMenuState = $('#main-menu-state');
+  if (mainMenuState.length > 0) {
+    // animate mobile menu
+    mainMenuState.change(function(e) {
+      var menu = $('#main-menu');
+      if (this.checked) {
+        menu.hide().slideDown(250, function() {/* menu.css('display', ''); */});
+      } else {
+        menu.show().slideUp(250, function() { /*menu.css('display', ''); */});
+      }
+    });
+    // hide mobile menu beforeunload
+    $(window).on('beforeunload unload', function() {
+      if (mainMenuState[0].checked) {
+        mainMenuState[0].click();
+      }
+    });
+ }
+});
 </script>
 
 </body>
