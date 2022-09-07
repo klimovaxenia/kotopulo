@@ -149,6 +149,9 @@
   /* ...end */
 
 
+  .sm-blue > ul:first-child {
+    height: 
+  }
   .sm-blue {
     background: #3092c0;
     padding-top:0px;
