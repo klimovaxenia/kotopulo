@@ -1,0 +1,197 @@
+
+body {
+  background-color: #f6ece6fe;
+  color:black;
+  padding:0px;
+  margin:0px;
+  font-size:100%;
+  }
+ .sm-header {
+  display: block;
+  height: 50px;
+  background-color: #004455fe/*536895*/;
+  padding-top:0px;
+  padding-bottom:0px;
+ }
+ .logo2 {
+  width:155px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: transparent;
+  display: inline-block;
+ }
+ul.sm-blue {
+  background-color: #536895;
+  display: inline-block;
+}
+a.sm-red-a1 { /*.sm {display:block} priority #id*/
+  padding: 10px 20px;
+  background: #536895;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+a.sm-red-a1:hover, a.sm-red-a1:focus, a.sm-red-a1:active {
+  color: silver;
+}
+a.sm-red-a2 { /*.sm {display:block} priority #id*/
+  background-color: white;
+  color: #536895;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+a.sm-red-a2:hover {
+  color: #fff;
+  background-color: #536895;
+}
+.sm-blue ul { /*element.style {width: auto; display: block;}*/
+  border: 1px solid #a8a8a8;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: #fff;
+  border-radius: 0px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+.sm-submenu a {
+  background-color: white;
+  color: #536895;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+li.work { /*button .sm {position: relative;}*/
+  /*float: left;*/ /*everything is floating around btn*/
+  border-top: 11.8px;
+}
+a.sm-btn { /*.sm a {position:relative; display: block;}*/
+  display: inline-block;
+  left: 32%;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 3px solid #37c8abff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 11.8px;
+  margin-bottom: 11.8px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #004455fe;
+}
+@media (min-width: 768px) {
+  /* Switch to desktop layout
+  -----------------------------------------------
+     These transform the menu tree from
+     collapsible to desktop (navbar + dropdowns)
+  -----------------------------------------------*/
+  /* start... (it's not recommended editing these rules) */
+  .sm-blue ul {
+    position: absolute;
+    width: 12em;
+  }
+
+  .sm-blue li {
+    float: left;
+  }
+
+  .sm-blue.sm-rtl li {
+    float: right;
+  }
+
+  .sm-blue ul li, .sm-blue.sm-rtl ul li, .sm-blue.sm-vertical li {
+    float: none;
+  }
+
+  .sm-blue a {
+    white-space: nowrap;
+  }
+
+  .sm-blue ul a, .sm-blue.sm-vertical a {
+    white-space: normal;
+  }
+
+  .sm-blue .sm-nowrap > li > a, .sm-blue .sm-nowrap > li > :not(ul) a {
+    white-space: nowrap;
+  }
+
+  /* ...end */
+
+.sm-header {
+  display:flex;
+  height: 50px;
+  background-color: #004455fe /*#536895*/;
+  align-items:center;
+  padding-left:2%;
+}
+.logo2 {
+  width:200px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: transparent;
+}
+ul.sm-red-ul1 {
+  width: 75%;
+  padding-left: 5%;
+  background-color: transparent;
+}
+.sm-blue a {
+  text-decoration:none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
+  padding-top:15.8px;
+  padding-bottom:15.8px;
+  padding-right:20px;
+  padding-left:20px;
+
+}
+.sm-blue a:hover, .sm-blue a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted{
+   color:silver;
+}
+a.sm-red-a1 {
+  background-color: transparent;
+}
+.sm-submenu a {
+  color: #536895;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.sm-submenu a:hover {
+  color: white;
+}
+li.work {
+  float: right;
+  border-top: 11.8px;
+}
+a.sm-btn {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: 11.8;
+  margin-bottom: 11.8px;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #fff;
+}
+

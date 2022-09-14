@@ -2,23 +2,16 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/png" href="img/favicon-dwh-2.png">
 <link href='css/sm-core-css.css' rel='stylesheet' type='text/css' />
-<link href='css/sm-mystyle.css' rel='stylesheet' type='text/css' />
+<link href='css/sm-mystyle-100.css' rel='stylesheet' type='text/css' />
 <link href='css/btn.css' rel='stylesheet' type='text/css' />
-
-<style>
-.red ul ul li a {color:red;}
-.blue {color:blue;}
-.gray {color:gray;}
-.logo {display: inline-block;}
-</style>
-
 </head>
 
 <body>
-
+<!-- Header -->
 <div class="sm-header">
-<img class="logo" src="img/gce-dataworks-279x37px.png" alt="DWH Works">
+<img class="logo2" src="img/gce-dataworks-279x37px.png" alt="DWH Works">
 
 
 <input id="main-menu-state" type="checkbox" />
@@ -26,41 +19,60 @@
   <span class="main-menu-btn-icon"></span> 
 </label>
 
-<ul id="main-menu" class="sm sm-blue logo">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Services</a>
+<ul id="main-menu" class="sm sm-blue sm-red-ul1">
+  <li><a class="sm-red-a1" href="#">Home</a></li>
+  <li><a class="sm-red-a1" href="#">Services</a>
     <ul class="sm-submenu">
-      <li><a href="#">Data Warehousing</a></li>
-      <li><a href="#">Buisness Intelligence</a></li>
-      <li><a href="#">Greenplum</a></li>
+      <li><a class="sm-red-a2" href="#">Data Warehousing</a></li>
+      <li><a class="sm-red-a2" href="#">Buisness Intelligence</a></li>
+      <li><a class="sm-red-a2" href="#">Greenplum</a></li>
     </ul>
   </li>
-  <li><a href="#">Company</a>
+  <li><a class="sm-red-a1" href="#">Company</a>
     <ul class="sm-submenu">
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Case Studies</a></li>
+      <li><a class="sm-red-a2" href="#">About Us</a></li>
+      <li><a class="sm-red-a2" href="#">Case Studies</a></li>
     </ul>
   </li>
-  <li><a href="#">Blog</a>
+  <li><a class="sm-red-a1" href="#">Blog</a>
   <li class="work"><a class="sm-btn" href="#">Connect</a></li>
 </ul>
 </div>
 
-<div class="red">
-  <p>Paragraph</p>
-  <ul>
-    <li>List 1</li>
-    <li><a class="red" href="#">List 2</a></li>
-    <li>List 3
-      <ul>
-        <li>List 3.1</li>
-        <li><a href="#">List 3.2</a></li>
-      </ul>
-    </li>
-  </ul>
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+<br>
 
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 <script src="js/jquery-3.6.0.js" type="text/javascript"></script>
 <script src="js/jquery.smartmenus.js" type="text/javascript"></script>
 
@@ -69,6 +81,7 @@
     $('#main-menu').smartmenus();
   });
 
+// Hamburger
 $(function() {
   var mainMenuState = $('#main-menu-state');
   if (mainMenuState.length > 0) {
