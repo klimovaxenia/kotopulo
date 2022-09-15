@@ -1,4 +1,7 @@
 
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+
 body {
   background-color: #f6ece6fe;
   color:black;
@@ -76,7 +79,7 @@ a.sm-red-a1:hover, a.sm-red-a1:focus, a.sm-red-a1:active {
 a.sm-red-a2 { /*.sm {display:block} priority #id*/
   background-color: white;
   color: #536895;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, FontAwesome, Helvetica, sans-serif;
   font-size: 16px;
   text-decoration: none;
   padding-top: 10px;
