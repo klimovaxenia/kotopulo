@@ -42,18 +42,28 @@ body {
   border-radius: 4px;*/
 }
 .sm-blue a .sub-arrow::before {
-  content: '>';
+  content: ' ';
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-top: 10px;
   display: inline-block;
   top: 0;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .sm-blue a.highlighted .sub-arrow::before {
-  content: '>';
+  content: ' ';
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-top: 10px;
   display: inline-block;
   top: 0;
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 ul.sm-blue {
   background-color: #004455fe;
