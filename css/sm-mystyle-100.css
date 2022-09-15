@@ -28,7 +28,7 @@ body {
   top: 50%;
   margin-top: -17px;
   left: auto;
-  /*right: 4px;*/
+  right: 4px;
   width: 17px;
   height: 34px;
   overflow: hidden;
@@ -40,9 +40,17 @@ body {
 }
 .sm-blue a .sub-arrow::before {
   content: '>';
+  display: inline-block;
+  top: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .sm-blue a.highlighted .sub-arrow::before {
   content: '>';
+  display: inline-block;
+  top: 0;
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 ul.sm-blue {
   background-color: #004455fe;
@@ -52,7 +60,10 @@ a.sm-red-a1 { /*.sm {display:block} priority #id*/
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 26px;
+  border-bottom: 0.3px solid silver;
+  margin-left: 6px;
+  margin-right: 6px;
   background: #004455fe;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -180,8 +191,8 @@ a.sm-btn:hover {
   top: 50%;
   margin-top: -17px;
   left: auto;
-  /*right: 4px;*/
-  width: 17px;
+  right: 6px;
+  width: 9px;
   height: 34px;
   overflow: hidden;
   font: bold 16px/34px monospace !important;
@@ -192,9 +203,17 @@ a.sm-btn:hover {
 }
 .sm-blue a .sub-arrow::before {
   content: '>';
+  display: none;
+  top: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .sm-blue a.highlighted .sub-arrow::before {
   content: '>';
+  display: none;
+  top: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 ul.sm-red-ul1 {
@@ -207,10 +226,10 @@ ul.sm-red-ul1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: white;
-  padding-top:15.8px;
-  padding-bottom:15.8px;
-  padding-right:15px;
-  padding-left:20px;
+  padding-top: 15.8px;
+  padding-bottom: 15.8px;
+  padding-right: 20px;
+  padding-left: 20px;
 
 }
 /* Need to change */
@@ -219,6 +238,12 @@ ul.sm-red-ul1 {
 }
 a.sm-red-a1 {
   background-color: transparent;
+  border-bottom: none;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+a.sm-blue-a1 .arrow {
+  padding-right: 30px;
 }
 #last-list {
   padding-right: 0px;
