@@ -6,29 +6,54 @@ body {
   margin:0px;
   font-size:100%;
   }
- .sm-header {
+.sm-header {
   display: block;
   height: 50px;
   background-color: #004455fe/*536895*/;
   padding-top:0px;
   padding-bottom:0px;
- }
+}
  .logo2 {
   width:155px;
   padding-left: 2%;
   padding-right: 2%;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  margin-bottom: 2px;
   background-color: transparent;
   display: inline-block;
- }
+}
+.sm-blue a .sub-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: auto;
+  /*right: 4px;*/
+  width: 17px;
+  height: 34px;
+  overflow: hidden;
+  font: bold 16px/34px monospace !important;
+  text-align: center;
+  /*text-shadow: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;*/
+}
+.sm-blue a .sub-arrow::before {
+  content: '>';
+}
+.sm-blue a.highlighted .sub-arrow::before {
+  content: '>';
+}
 ul.sm-blue {
-  background-color: #536895;
-  display: inline-block;
+  background-color: #004455fe;
+  /*display: inline-block;*/
 }
 a.sm-red-a1 { /*.sm {display:block} priority #id*/
-  padding: 10px 20px;
-  background: #536895;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #004455fe;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -66,7 +91,7 @@ a.sm-red-a2:hover {
   background-color: white;
   color: #536895;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  /*font-size: 16px;*/
   text-decoration: none;
 }
 li.work { /*button .sm {position: relative;}*/
@@ -74,8 +99,9 @@ li.work { /*button .sm {position: relative;}*/
   border-top: 11.8px;
 }
 a.sm-btn { /*.sm a {position:relative; display: block;}*/
-  display: inline-block;
-  left: 32%;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
   background-color: transparent;
   border-radius: 6px;
   border: 3px solid #37c8abff;
@@ -85,13 +111,15 @@ a.sm-btn { /*.sm a {position:relative; display: block;}*/
   padding-right: 10px;
   margin-top: 11.8px;
   margin-bottom: 11.8px;
-  margin-left: 0px;
-  margin-right: 0px;
   text-decoration: none;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #004455fe;
+  color: #fff;
+}
+a.sm-btn:hover {
+  color: #fff;
+  background-color: #37c8abff;
 }
 @media (min-width: 768px) {
   /* Switch to desktop layout
@@ -132,11 +160,11 @@ a.sm-btn { /*.sm a {position:relative; display: block;}*/
   /* ...end */
 
 .sm-header {
-  display:flex;
+  display: flex;
   height: 50px;
   background-color: #004455fe /*#536895*/;
-  align-items:center;
-  padding-left:2%;
+  align-items: center;
+  padding-left: 2%;
 }
 .logo2 {
   width:200px;
@@ -146,6 +174,29 @@ a.sm-btn { /*.sm a {position:relative; display: block;}*/
   padding-bottom: 0px;
   background-color: transparent;
 }
+
+.sm-blue a .sub-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: auto;
+  /*right: 4px;*/
+  width: 17px;
+  height: 34px;
+  overflow: hidden;
+  font: bold 16px/34px monospace !important;
+  text-align: center;
+  /*text-shadow: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;*/
+}
+.sm-blue a .sub-arrow::before {
+  content: '>';
+}
+.sm-blue a.highlighted .sub-arrow::before {
+  content: '>';
+}
+
 ul.sm-red-ul1 {
   width: 75%;
   padding-left: 5%;
@@ -158,15 +209,19 @@ ul.sm-red-ul1 {
   color: white;
   padding-top:15.8px;
   padding-bottom:15.8px;
-  padding-right:20px;
+  padding-right:15px;
   padding-left:20px;
 
 }
+/* Need to change */
 .sm-blue a:hover, .sm-blue a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted{
    color:silver;
 }
 a.sm-red-a1 {
   background-color: transparent;
+}
+#last-list {
+  padding-right: 0px;
 }
 .sm-submenu a {
   color: #536895;
@@ -184,7 +239,9 @@ li.work {
   border-top: 11.8px;
 }
 a.sm-btn {
+  display: block;
   left: 0%;
+  width: auto;
   padding-top: 2px;
   padding-bottom: 2px;
   padding-left: 4px;
@@ -192,7 +249,11 @@ a.sm-btn {
   margin-top: 11.8;
   margin-bottom: 11.8px;
   margin-left: 0px;
-  margin-right: 0px;
+  margin-right: 4px;
+  color: #fff;
+}
+/* need to change it at "sm-blue a:hover"*/
+a.sm-btn:hover {
   color: #fff;
 }
 
