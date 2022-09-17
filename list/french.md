@@ -1,21 +1,16 @@
 Française/Français
 -------------------------------------------------------------------------
 --------------------------------------------------------------------------
-Le – the – masculine article/singular [lur]
+Le – the – masculine article/singular [lur]  
+La – the – feminine/singular [lah]  
+Les – the plural [le]  
 
-La – the – feminine/singular [lah]
+Un – a – masculine article/singular [a]  
+Une – a – feminine/singular [un]  
+Des – the plural [de]  
 
-Les – the plural [le]
-
-Un – a – masculine article/singular [a]
-
-Une – a – feminine/singular [un]
-
-Des – the plural [de]
-
-C'est la vie. - It is life.
-
-Ce cont des étudiants. - They are students.
+C'est la vie. - It is life.  
+Ce cont des étudiants. - They are students.  
 
 Présent
 ---------------------------------------------------------------------------
@@ -155,9 +150,7 @@ de + la = de la
 de + l' = de l'
 
 
-                   | singulier                                 | pluriel
--------------------|-----------------|--------------------------------------------------
-                   | masculin        | féminin                 | masculin      | féminin
+none               | masculin        | féminin                 | masculin      | féminin
 -------------------|-----------------|-------------------------|---------------|--------                   
 à moi [moa] to me  | mon frère       | ma soeur mon école      | mes parents   | mes amies
 à toi [tua] to you | ton frère       | ta soeur ton école      | tes parents   | tes amies
