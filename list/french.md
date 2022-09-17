@@ -14,19 +14,19 @@ Ce cont des étudiants. - They are students.
 
 Présent
 ---------------------------------------------------------------------------
-être – to be  
+**être** – to be  
 Je suis / tu es / il est / elle est – I am / you are / he is / she is  
 Nous sommes [noo s]  
 Vous étes [voo s]  
 Ils ou elles sont  
 
-avoir – to have  
+**avoir** – to have  
 J’ai / tu as / il a / elle a  
 nous avons  
 vous avez  
 ils/elles ont  
 
-aller - to go [ale]  
+**aller** - to go [ale]  
 Je vais[ve] / tu vas / il va / elle va [va]  
 Nous allons [alon']  
 Vous allez [alle]  
@@ -37,7 +37,7 @@ Le lundi, nous allons á la banque. - On Mondays, we go to the bank.
 Le samedi, vous allez en cours de yoga. - On Saturdays, you go to yoga class.  
 Et le dimanche, ils ou elles vont á la piscine. - And on Sundays, they (M) or they (F) go to the swimming pool.  
 
-Vouloir - to want  
+**Vouloir** - to want  
 Je veux / tu veux / il veut / elle veut [voo]  
 Nous voulons []  
 Vous voulez []  
