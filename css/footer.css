@@ -1,0 +1,10 @@
+
+.footer-box {
+  display: flex;
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  margin-top: 400px; /*remove later*/
+  background-color: #241f1cff;
+  color: #fff;
+}

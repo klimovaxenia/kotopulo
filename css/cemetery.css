@@ -1,0 +1,30 @@
+
+.technology {
+  
+}
+.cemetery {
+  text-align: center;
+}
+.gray-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.gray-box div {
+  display: inline-block;
+  padding: 10px;
+}
+.gray-box img {
+  width: 180px;
+}
+@media (max-width: 460px) {
+
+.gray-box img {
+  width: 150px;
+}
+
+}
+

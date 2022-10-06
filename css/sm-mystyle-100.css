@@ -59,7 +59,7 @@ body {
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
-  margin-top: 10px;
+  margin-top: 13px;
   display: inline-block;
   top: 0;
   -webkit-transform: rotate(225deg);
@@ -67,6 +67,8 @@ body {
 }
 ul.sm-blue {
   background-color: #004455fe;
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver;
   /*display: inline-block;*/
 }
 a.sm-red-a1 { /*.sm {display:block} priority #id*/
@@ -74,7 +76,7 @@ a.sm-red-a1 { /*.sm {display:block} priority #id*/
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 26px;
-  border-bottom: 0.3px solid silver;
+  border-bottom: 0.3px solid #3d5c5c;
   margin-left: 6px;
   margin-right: 6px;
   background: #004455fe;
@@ -84,7 +86,7 @@ a.sm-red-a1 { /*.sm {display:block} priority #id*/
   text-decoration: none;
 }
 a.sm-red-a1:hover, a.sm-red-a1:focus, a.sm-red-a1:active {
-  color: silver;
+  /*color: silver;*/
 }
 a.sm-red-a2 { /*.sm {display:block} priority #id*/
   background-color: white;
@@ -121,6 +123,7 @@ a.sm-red-a2:hover {
 li.work { /*button .sm {position: relative;}*/
   /*float: left;*/ /*everything is floating around btn*/
   border-top: 11.8px;
+  border-bottom: 11.8px;
 }
 a.sm-btn { /*.sm a {position:relative; display: block;}*/
   display: block;
@@ -228,7 +231,9 @@ a.sm-btn:hover {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-
+ul.sm-blue {
+  border-bottom: none;
+}
 ul.sm-red-ul1 {
   width: 75%;
   padding-left: 5%;
@@ -275,6 +280,7 @@ a.sm-blue-a1 .arrow {
 li.work {
   float: right;
   border-top: 11.8px;
+  border-bottom: 11.8px;
 }
 a.sm-btn {
   display: block;
