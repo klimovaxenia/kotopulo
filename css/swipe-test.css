@@ -1,44 +1,57 @@
 
-.slideshow-container * {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-.item-box {
-  height: 400px;
+.main-container {
+  height: 600px;
   width: 100%;
-  position: relative;
-  display: block;
-}
-.slideshow-box {
-  width: 100%;
-  height: 400px;
-  display: flex;
   overflow: hidden;
+  /*padding-top: 1rem;*/
 }
-.mySlide {
-  display: none;
-  justify-content: center;
-  align-items: center;
+
+.slider-container {
+  height: 600px;
+  display: inline-flex;
+  overflow: hidden;
+  scrollbar-width: none;
+  transform: translateX(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
 }
-.mySlide:first-child {
+
+.slide{
+  max-height: 600px;
+  width: 100vw;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.my-container {
-  background-color: #c8e1e8ff;
+.slide-box {
+  background-color: silver;
+  height: 600px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .text-box {
-  color: #374845ff;
-  padding: 0px 40px;
   width: 40%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  padding-left: 40px;
 }
 .image-box {
-  overflow: hidden;
-  height: 400px;
   width: 60%;
+  height: 100%;
+  overflow: hidden;
 }
-.image-box img {
-  height: 400px;
-}
-
 
 /* Next & previous buttons */
 .prev, .next {
@@ -46,7 +59,7 @@
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -50px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -66,9 +79,6 @@
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-.prev:active, .next:active {
-  background-color: rgba(0,0,0,0);
-}
 
 /* The dots/bullets/indicators */
 .bullets {
@@ -76,7 +86,6 @@
   text-align: center;
   position: absolute;
   margin: auto;
-  bottom: 20px;
   left: 0;
   right: 0;
   text-align: center;
@@ -100,18 +109,5 @@
 .fade {
   animation-name: fade;
   animation-duration: 3s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@media (max-width: 795px) {
-
-}
-
-@media (max-width: 320px) {
-
 }
 

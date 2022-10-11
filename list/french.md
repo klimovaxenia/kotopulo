@@ -162,9 +162,10 @@ Le garçon et la fille sont grands.
 -----------------------------------------------------------------------------
 
 ### qiestion
+
 fr       | eng
 ---------|---------
-quel     | what
+quel     | what, which
 qui      | who
 quoi     | What
 où       | Where
