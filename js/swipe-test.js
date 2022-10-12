@@ -2,6 +2,7 @@
 const slider = document.querySelector('.slider-container'),
   slides = Array.from(document.querySelectorAll('.slide'))
 
+let touchDots = document.getElementsByClassName("dot");
 let isDragging = false,
   startPos = 0,
   currentTranslate = 0,
@@ -61,13 +62,23 @@ function touchEnd() {
   isDragging = false
   const movedBy = currentTranslate - prevTranslate
 
-  // if moved enough negative then snap to next slide if there is one
-  if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1
+    // if moved enough negative then snap to next slide if there is one
+    if (movedBy < -100 && currentIndex < slides.length - 1) {
+        currentIndex += 1;
+    }
 
-  // if moved enough positive then snap to previous slide if there is one
-  if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
+    // if moved enough positive then snap to previous slide if there is one
+    if (movedBy > 100 && currentIndex > 0) {
+        currentIndex -= 1;
+    }
+   
+    for (i = 0; i < touchDots.length; i++) {
+        touchDots[i].className = touchDots[i].className.replace(" active", "");
+    }
+    console.log()
 
-  setPositionByIndex()
+    setPositionByIndex()
+    touchDots[currentIndex].className += " active";
 
   slider.classList.remove('grabbing')
 }

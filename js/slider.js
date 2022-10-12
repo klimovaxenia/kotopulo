@@ -5,7 +5,7 @@ let slideIndex = 0;
 let curTranslate = 0;
 let mySlides = Array.from(document.querySelectorAll(".slide"))
 let mySwiper = document.querySelector(".slider-container");
-let dots = document.getElementsByClassName("dot");
+let dots = Array.from(document.querySelectorAll(".dot"));
 
 console.log(mySwiper);
 
@@ -15,6 +15,20 @@ prevButton.addEventListener("click", showPrvSlide);
 window.addEventListener("resize", positionByIndex)
 
 dots[slideIndex].className += " active";
+
+function currentSlide(n) {
+    slideIndex = n;
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    showSlide();
+    dots[slideIndex].className += " active";
+}
+function showSlide() {
+
+    console.log(slideIndex);
+    positionByIndex();
+}
 
 function showNxtSlide() {
     
@@ -55,11 +69,11 @@ function showPrvSlide() {
 }
 
 function positionByIndex() {
-  curTranslate = slideIndex * -window.innerWidth;
+    curTranslate = slideIndex * -window.innerWidth;
 
-  console.log("curTranslate = " + curTranslate);
+    console.log("curTranslate = " + curTranslate);
 
-  setPosition();
+    setPosition();
 }
 
 function setPosition() {

@@ -3,17 +3,18 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  --n: 400px;
 }
 
 .main-container {
-  height: 600px;
+  height: 400px;
   width: 100%;
   overflow: hidden;
   /*padding-top: 1rem;*/
 }
 
 .slider-container {
-  height: 600px;
+  height: 100%;
   display: inline-flex;
   overflow: hidden;
   scrollbar-width: none;
@@ -23,7 +24,7 @@
 }
 
 .slide{
-  max-height: 600px;
+  max-height: 100%;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -31,7 +32,7 @@
 }
 .slide-box {
   background-color: silver;
-  height: 600px;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -39,7 +40,7 @@
 }
 .text-box {
   width: 40%;
-  height: 600px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,6 +53,9 @@
   height: 100%;
   overflow: hidden;
 }
+.image-box img {
+  height: 100%;
+}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -59,7 +63,7 @@
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -50px;
+  margin-top: -200px;
   padding: 16px;
   color: white;
   font-weight: bold;
