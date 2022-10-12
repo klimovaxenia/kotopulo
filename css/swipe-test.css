@@ -7,10 +7,10 @@
 }
 
 .main-container {
-  height: 400px;
+  height: 500px;
   width: 100%;
+  display: block;
   overflow: hidden;
-  /*padding-top: 1rem;*/
 }
 
 .slider-container {
@@ -25,13 +25,13 @@
 
 .slide{
   max-height: 100%;
-  width: 100vw;
+  width: 100vw; /* Important, slide should be view width*/
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /*align-items: center;
+  justify-content: center;*/
 }
 .slide-box {
-  background-color: silver;
+  background-color: #c8e1e8ff;
   height: 100%;
   width: 100%;
   display: flex;
@@ -46,7 +46,7 @@
   justify-content: center;
 }
 .text {
-  padding-left: 40px;
+  padding-left: 60px;
 }
 .image-box {
   width: 60%;
@@ -61,11 +61,12 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: auto;
-  margin-top: -200px;
+  margin-top: -36px;
   padding: 16px;
-  color: white;
+  color: black;
+  background-color: rgba(0,0,0,0.1);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -81,7 +82,7 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  /*background-color: rgba(0,0,0,0.2);*/
 }
 
 /* The dots/bullets/indicators */
@@ -104,9 +105,8 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
-.active, .dot:hover {
-  background-color: #717171;
+.active {
+  background-color: #717171 !important;
 }
 
 /* Fading animation */
@@ -115,3 +115,6 @@
   animation-duration: 3s;
 }
 
+@media (max-width: 795px) {
+
+}

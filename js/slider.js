@@ -7,7 +7,6 @@ let mySlides = Array.from(document.querySelectorAll(".slide"))
 let mySwiper = document.querySelector(".slider-container");
 let dots = Array.from(document.querySelectorAll(".dot"));
 
-console.log(mySwiper);
 
 nextButton.addEventListener("click", showNxtSlide);
 prevButton.addEventListener("click", showPrvSlide);
@@ -81,4 +80,5 @@ function setPosition() {
     mySwiper.style.transform = `translateX(${curTranslate}px)`;
     console.log(mySwiper);
 }
+
 

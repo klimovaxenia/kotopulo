@@ -6,15 +6,16 @@
   <link href='css/sm-core-css.css' rel='stylesheet' type='text/css'/>
   <link href='css/sm-mystyle-100.css' rel='stylesheet' type='text/css' />
   <link href='css/btn.css' rel='stylesheet' type='text/css' />
-  <link href='css/slideshow.css' rel='stylesheet' type='text/css' />
+  <!--link href='css/slideshow.css' rel='stylesheet' type='text/css' /-->
   <link href='css/footer.css' rel='stylesheet' type='text/css' />
   <link href='css/cemetery.css' rel='stylesheet' type='text/css' />
-  <script src="js/slideshow.js"></script>
+  <link href='css/swipe-test.css' rel='stylesheet' type='text/css' />
+  <!--script src="js/slideshow.js"></script-->
 </head>
 
 <body>
 
-<!-- Header start -->
+<!-- Header Menu start -->
 
 <div class="sm-header">
 <img class="logo2" src="img/gce-dataworks-279x37px.png" alt="DWH Works">
@@ -46,65 +47,161 @@
 </ul>
 </div>
 
-<!-- Header end -->
+<!-- Header Menu end -->
 
 
 <!-- Slideshow start -->
-<div class="item-box">
 
-  <div class="slideshow-box">
-  
-   <div class="mySlide fade my-container">
-    
-     <div class="text-box">
-       <div class="text">
-         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-       </div>
-     </div>
- 
-     <div class="image-box">
-       <div><img src="img/slides.png" alt="monet"></div>
-     </div>
- 
-   </div>
- 
-   <div class="mySlide fade my-container">
-     <div class="text-box">
-       <div class="text">
-         <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-       </div>
-     </div>
-     <div class="image-box">
-       <div><img src="img/slides.png" alt="monet"></div>
-     </div>
-   </div>
+<div class="main-container">
 
-   <div class="mySlide fade my-container">
-     <div class="text-box">
-       <div class="text">
-         <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
-       </div>
-     </div>
-     <div class="image-box">
-       <div><img src="img/slides.png" alt="monet"></div>
-     </div>
+    <div class="slider-container">
+
+    <div class="slide mySlide">
+        <div class="slide-box">  
+            <div class="text-box">
+                <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                </div>
+            </div>
+ 
+            <div class="image-box">
+                <div><img src="img/monet-01.jpg" alt="monet"></div>
+            </div>
+        </div>
     </div>
 
-  <div class="bullets">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
+    <div class="slide mySlide">
+        <div class="slide-box">  
+            <div class="text-box">
+                <div class="text">
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+ 
+            <div class="image-box">
+                <div><img src="img/monet-02.jpg" alt="monet"></div>
+            </div>
+        </div>
+    </div>
 
-  </div>
-  <!-- Next / Previous -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="slide mySlide">  
+        <div class="slide-box">  
+            <div class="text-box">
+                <div class="text">
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+                </div>
+            </div>
+ 
+            <div class="image-box">
+                <div><img src="img/slides.png" alt="monet"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide mySlide">
+        <div class="slide-box">  
+            <div class="text-box">
+                <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                </div>
+            </div>
+ 
+            <div class="image-box">
+                <div><img src="img/monet-03.jpg" alt="monet"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide mySlide">  
+        <div class="slide-box">  
+            <div class="text-box">
+                <div class="text">
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+ 
+            <div class="image-box">
+                <div><img src="img/monet-03.jpg" alt="monet"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide mySlide">  
+        <div class="slide-box">  
+            <div class="text-box">
+                <div class="text">
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+                </div>
+            </div>
+ 
+            <div class="image-box">
+                <div><img src="img/monet-01.jpg" alt="monet"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide mySlide">
+        <div class="slide-box">  
+            <div class="text-box">
+                <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
+                </div>
+            </div>
+ 
+            <div class="image-box">
+                <div><img src="img/monet-03.jpg" alt="monet"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide mySlide">  
+        <div class="slide-box">  
+            <div class="text-box">
+                <div class="text">
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+ 
+            <div class="image-box">
+                <div><img src="img/monet-03.jpg" alt="monet"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide mySlide">  
+        <div class="slide-box">  
+            <div class="text-box">
+                <div class="text">
+                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+                </div>
+            </div>
+ 
+            <div class="image-box">
+                <div><img src="img/monet-01.jpg" alt="monet"></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Bullets / Dots -->
+    <div class="bullets">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+
+    <!-- Next / Previous -->
+    <a class="prev" id="prev">&#10094;</a>
+    <a class="next" id="next">&#10095;</a>
 
 </div>
-
-<!-- Dots -->
-
 
 <!-- Slideshow end -->
 
@@ -128,6 +225,7 @@
 
 <script src="js/jquery-3.6.0.js" type="text/javascript"></script>
 <script src="js/jquery.smartmenus.js" type="text/javascript"></script>
+<script src="js/swipe-test.js" type="text/javascript"></script>
 
 <script>
   //var test = "Hi there!";

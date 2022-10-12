@@ -4,26 +4,30 @@
 }
 .cemetery {
   text-align: center;
+  padding-top: 60px;
+  font-family: Arial;
 }
 .gray-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 .gray-box div {
   display: inline-block;
   padding: 10px;
 }
 .gray-box img {
-  width: 180px;
+  width: 150px;
 }
 @media (max-width: 460px) {
 
 .gray-box img {
-  width: 150px;
+  width: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 }
