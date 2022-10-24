@@ -35,17 +35,14 @@ slides.forEach((slide, index) => {
 window.addEventListener('resize', setPositionByIndex)
 
 dots[currentIndex].className += " active";
+prevButton.className += " hide-arrow";
 
-// prevent menu popup on long press
-//window.oncontextmenu = function (event) {
-//  event.preventDefault()
-//  event.stopPropagation()
-//  return false
-//}
 
 function getPositionX(event) {
   return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
 }
+
+// showing slide by dots
 
 function currentSlide(n) {
     currentIndex = n;
@@ -54,6 +51,7 @@ function currentSlide(n) {
     }
     showSlide();
     dots[currentIndex].className += " active";
+    hideArrow();
 }
 
 function showSlide() {
@@ -61,6 +59,8 @@ function showSlide() {
     console.log("dot index = " + currentIndex);
     setPositionByIndex();
 }
+
+// showing slide by arrow
 
 function showNxtSlide() {
     
@@ -79,6 +79,7 @@ function showNxtSlide() {
     setPositionByIndex();
     dots[currentIndex].className += " active";
     console.log("dots" + currentIndex)
+    hideArrow();
 }
 
 
@@ -98,7 +99,26 @@ function showPrvSlide() {
     
     setPositionByIndex();
     dots[currentIndex].className += " active";
+    hideArrow();
 }
+
+// Hidding prev and next buttins
+
+function hideArrow() {
+    prevButton.className = prevButton.className.replace(" hide-arrow", "");    
+    nextButton.className = nextButton.className.replace(" hide-arrow", "");    
+
+    if (currentIndex <= 0) {
+        prevButton.className += " hide-arrow";
+        console.log("hidding prev button");
+    }
+    if (currentIndex >= slides.length-1) {
+        nextButton.className += " hide-arrow";
+        console.log("hidding next button");
+    }
+}
+
+
 
 function touchStart(index) {
   return function (event) {
@@ -142,6 +162,7 @@ function touchEnd() {
 
     setPositionByIndex()
     touchDots[currentIndex].className += " active";
+    hideArrow();
 
   slider.classList.remove('grabbing')
 }
@@ -161,4 +182,11 @@ function setSliderPosition() {
   slider.style.transform = `translateX(${currentTranslate}px)`
 }
 
+
+// prevent menu popup on long press
+//window.oncontextmenu = function (event) {
+//  event.preventDefault()
+//  event.stopPropagation()
+//  return false
+//}
 

@@ -7,7 +7,7 @@
 }
 
 .main-container {
-  height: 500px;
+  height: 400px;
   width: 100%;
   display: block;
   overflow: hidden;
@@ -39,17 +39,42 @@
   justify-content: center;
 }
 .text-box {
-  width: 40%;
+  width: 60%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.text {
-  padding-left: 60px;
+.slide-text {
+  padding-left: 80px;
+  font-size: 35px;
+  color: #004455fe;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+}
+.slide-link {
+  padding-top: 20px;
+}
+.slide-link a {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #004455fe;
+  /*padding-top: 20px;*/
+  padding-right: 8px;
+}
+.slide-link::after {
+  content: ' ';
+  border: solid #004455fe;
+  border-width: 0 3px 3px 0;
+  padding: 5px;
+  margin-bottom: 2px;
+  display: inline-block;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .image-box {
-  width: 60%;
+  width: 40%;
   height: 100%;
   overflow: hidden;
 }
@@ -61,14 +86,14 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 320px;
+  top: 280px;
   width: auto;
   margin-top: -36px;
   padding: 16px;
-  color: black;
-  background-color: rgba(0,0,0,0.1);
+  color: #004455fe;
+  /*background-color: rgba(255,255,255,0.7);*/
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -83,6 +108,12 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   /*background-color: rgba(0,0,0,0.2);*/
+}
+.prev.hide-arrow {
+ display: none;
+}
+.next.hide-arrow {
+ display: none;
 }
 
 /* The dots/bullets/indicators */
@@ -116,5 +147,83 @@
 }
 
 @media (max-width: 795px) {
+
+.main-container {
+  height: 270px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.slide-text {
+  padding-left: 40px;
+  font-size: 20px;
+  color: #004455fe;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+}
+.slide-link {
+  padding-top: 15px;
+}
+.slide-link a {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #004455fe;
+  /*padding-top: 15px;*/
+  padding-right: 8px;
+}
+.slide-link::after {
+  content: ' ';
+  border: solid #004455fe;
+  border-width: 0 3px 3px 0;
+  padding: 4px;
+  margin-bottom: 2px;
+  display: inline-block;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 200px;
+  width: auto;
+  margin-top: -36px;
+  padding: 10px;
+  color: #004455fe;
+  /*background-color: rgba(255,255,255,0.7);*/
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  /*background-color: rgba(0,0,0,0.2);*/
+}
+.prev.hide-arrow {
+ display: none;
+}
+.next.hide-arrow {
+ display: none;
+}
+.dot {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin: 0 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
 }

@@ -1,10 +1,29 @@
 
 .footer-box {
   display: flex;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
   height: 200px;
   width: 100%;
-  margin-top: 400px; /*remove later*/
+  margin-top: 50px; /*remove later*/
   background-color: #241f1cff;
   color: #fff;
 }
+.footer-box-1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  /*align-items: center;*/
+}
+.footer-box-1 a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+}
+@media (max-width: 423px) {
+.footer-box-1 {
+  flex-direction: column;
+}
+
+}
+
