@@ -80,7 +80,47 @@ nous ouvrons
 vous ouvrez  
 ils / elles ouvrent  
 
+
+Les verbes en -dre
 ----------------------------------------------------------------------------
+
+les verbes comme attendre descendre, entendre, répondre, perdre | les verbes comme prendre apprendre, comprendre
+----------------------------------------------------------------|---------------------------------------
+j’attends             | je prends
+tu attends            | tu prends
+il / elle / on attend | il / elle / on prend
+nous attendons        | nous prenons
+vous attendez         | vous prenez
+ils / elles attendent | ils / elles prennent
+
+Les verbes en -ire : lire, dire, écrire
+-----------------------------------------------------------------------------------
+
+lire - to read  
+je lis  
+tu lis  
+il / elle / on lit  
+nous lisons  
+vous lisez  
+ils / elles lisent  
+
+dire - to say  
+je dis  
+tu dis  
+il / elle / on dit  
+nous disons  
+vous dites  
+ils / elles disent  
+
+écrire - to write    
+j’écris  
+tu écris  
+il / elle / on écrit  
+nous écrivons  
+vous écrivez  
+ils / elles écrivent  
+
+---------------------------------------------------------------------------------------
 
 When the French definite articles le and les are preceded by the prepositions à or de, the two words contract.  
 à + le = au [ou]  
@@ -173,3 +213,4 @@ comment  | How or What
 pourquoi | Why
 combien  | How many
 quand    | When
+

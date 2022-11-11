@@ -1,0 +1,123 @@
+
+.table-scroll-box {
+  width: 380px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.table-scroll-box h2 {
+  font-family: arial;
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+div.humble-table {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 380px;
+  height: 500px;
+  overflow: auto;
+  border: 1px solid silver; 
+  position: relative;
+}
+.table-header-box {
+  position: sticky; 
+  position: -webkit-sticky; 
+  top: 0px; 
+  width: 100%;
+}
+.table-header-box table {
+  width: 100%; 
+  background-color: #D6EEEE; 
+  z-index: -1;
+}
+.table-body {
+  position: relative; 
+  top: -1px; 
+  width: 100%; 
+  background-color: white; 
+  z-index: -2;
+}
+.humble-table table, thead, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.humble-table th, td {
+  padding: 5px;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+.humble-table table {
+  /*width: 350px;*/
+  /*table-layout: fixed;*/
+}
+.humble-table th, td, caption {
+  font-family: arial;
+  font-size: 16px;
+}
+.first-row {
+  /*background-color: #D6EEEE;*/
+}
+.first-row td:nth-child(3) {
+  text-align: center;
+}
+.second-row td:nth-child(3) {
+  text-align: center;
+}
+
+@media (max-width: 380px) {
+
+.table-scroll-box {
+  width: 100%;
+  margin-left: 0px;
+}
+div.humble-table {
+  margin-top: 0px;
+  padding-bottom: 10px;
+  margin-left: 0px;
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+  border: 1px solid silver;
+}
+.table-header-box {
+  position: sticky; 
+  position: -webkit-sticky; 
+  top: 0px; 
+  width: 100%;
+}
+.table-header-box table {
+  width: 100%; 
+  background-color: #D6EEEE; 
+  z-index: -1;
+}
+.table-body {
+  position: relative; 
+  top: -1px; 
+  width: 100%; 
+  background-color: white; 
+  z-index: -2;
+}
+.humble-table table, thead, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.humble-table th, td {
+  padding: 5px;
+}
+.humble-table th, td, caption {
+  font-family: arial;
+  font-size: 16px;
+}
+.first-row td:nth-child(3) {
+  text-align: center;
+}
+.second-row td:nth-child(3) {
+  text-align: center;
+}
+
+
+}
+
