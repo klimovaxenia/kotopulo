@@ -153,7 +153,7 @@ div.table-mobile-box {
   margin-right: 12px;
 }
 .table-scroll-box {
-  width: 440;
+  width: 440px;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -161,7 +161,7 @@ div.humble-table {
   margin-top: 0px;
   padding-bottom: 0px;
   margin-left: 0px;
-  width: 420;
+  width: 420px;
   max-height: 300px;
   overflow: auto;
   border: 1px solid silver;
@@ -170,7 +170,7 @@ div.table-scroll-box:after {
   content: "";
   display: block;
   position: relative;
-  width: 420;
+  width: 420px;
   border-top: 1px solid silver;
   margin-top: 0px;
   top: -1px;
