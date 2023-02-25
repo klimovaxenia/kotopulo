@@ -158,7 +158,7 @@ function touchEnd() {
         dots[i].className = dots[i].className.replace(" active", "");
     }
    
-    console.log()
+    console.log("Array: " + dots[i]);
 
     setPositionByIndex()
     touchDots[currentIndex].className += " active";
