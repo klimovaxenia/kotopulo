@@ -10,9 +10,16 @@ td {
 }
 /* If a table has vertical scrollbar you need to add */
 /* plus 10px to generale width */
+
+div.table-mobile-box {
+  width:auto;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .table-scroll-box {
   
-  width: 280px;
+  width: 440px;
   
   margin-left: auto;
   margin-right: auto;
@@ -38,13 +45,14 @@ div.humble-table {
   overflow: auto;
   /*border-bottom: 1px solid silver;*/ 
   position: relative;
+  border: none;
 }
 div.table-scroll-box:after {
   content: "";
   display: block;
   position: relative;
   
-  width: 260px;
+  width: 420px;
   
   border-top: 1px solid black;
   margin-top: 0px;
@@ -56,7 +64,7 @@ div.table-scroll-box:after {
   position: -webkit-sticky; 
   top: 0px; 
   
-  width: 260px;
+  width: 420px;
 }
 .table-header-box table {
   
@@ -70,7 +78,7 @@ div.table-scroll-box:after {
   position: relative; 
   top: -1px; 
   
-  width: 260px; 
+  width: 420px; 
   
   background-color: white; 
   z-index: -2;
@@ -139,17 +147,24 @@ td.dir-arrow {
 
 @media (max-width: 500px) {
 
+div.table-mobile-box {
+  width:auto;
+  margin-left: 12px;
+  margin-right: 12px;
+}
 .table-scroll-box {
   width: 100%;
   margin-left: 0px;
+  margin-right: 0px;
 }
 div.humble-table {
   margin-top: 0px;
   padding-bottom: 0px;
   margin-left: 0px;
   width: 100%;
-  max-height: 500px;
+  max-height: 300px;
   overflow: auto;
+  border: 1px solid silver;
 }
 div.table-scroll-box:after {
   content: "";
@@ -165,17 +180,17 @@ div.table-scroll-box:after {
   position: sticky; 
   position: -webkit-sticky; 
   top: 0px; 
-  width: 100%;
+  width: 420px;
 }
 .table-header-box table {
-  width: 100%; 
+  width: 420px; 
   background-color: #D6EEEE; 
   z-index: -1;
 }
 .table-body {
   position: relative; 
   top: -1px; 
-  width: 100%; 
+  width: 420px; 
   background-color: white; 
   z-index: -2;
 }
@@ -190,13 +205,6 @@ div.table-scroll-box:after {
   font-family: arial;
   font-size: 16px;
 }
-.first-row td:nth-child(3) {
-  text-align: center;
-}
-.second-row td:nth-child(3) {
-  text-align: center;
-}
-
 
 }
 
