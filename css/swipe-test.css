@@ -10,6 +10,7 @@
   height: 400px;
   width: 100%;
   display: block;
+  position: relative;
   overflow: hidden;
 }
 
@@ -49,7 +50,7 @@
   padding-left: 80px;
   font-size: 35px;
   color: #004455fe;
-  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: Arial, Helvetica, sans-serif;
 }
 .slide-link {
   padding-top: 20px;
@@ -86,14 +87,15 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 280px;
+  top: 50%/*280px*/;
   width: auto;
   margin-top: -36px;
   padding: 16px;
-  color: #004455fe;
+  /*color: #004455fe;*/
+  color: #ffff;
   /*background-color: rgba(255,255,255,0.7);*/
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -120,7 +122,7 @@
 .bullets {
   padding-top: 10px;
   text-align: center;
-  position: absolute;
+  position: relative;
   margin: auto;
   left: 0;
   right: 0;
@@ -158,7 +160,7 @@
   padding-left: 40px;
   font-size: 20px;
   color: #004455fe;
-  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: Arial, Helvetica, sans-serif;
 }
 .slide-link {
   padding-top: 15px;
@@ -186,14 +188,14 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 200px;
+  top: 50%;
   width: auto;
   margin-top: -36px;
   padding: 10px;
-  color: #004455fe;
+  color: #ffff;
   /*background-color: rgba(255,255,255,0.7);*/
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;

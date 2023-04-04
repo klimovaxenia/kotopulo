@@ -1,0 +1,105 @@
+.ind-p-box {
+  position: relative; 
+  display: block; 
+  padding-bottom: 50px; 
+  height: 500px;
+}
+.ind-abs-box {
+  margin-left: 200px; 
+  width: 500px; 
+  position: absolute;
+}
+div.draw {
+  height: 200px; 
+  width: 200px; 
+  background-color: silver; 
+  display: inline-block; 
+  position: relative; 
+  float: right;
+}
+.parag {
+  width: 300px; 
+  display: inline-block; 
+  float: left; 
+  position: relative;
+}
+.ind-abs-box-2 {
+  margin-left: 15%; 
+  margin-right: 15%; 
+  margin-top: 30px; 
+  position: relative;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+div.draw-2 {
+  height: 200px; 
+  width: 200px; 
+  display: inline-block; 
+  background-color: #c8e1e8ff;
+  vertical-align: top; 
+  /*display: inline-block; 
+  position: absolute;
+  top: 0px;*/
+}
+.parag-2 {
+  display: inline-block; 
+  font-size: 16px;
+  font-family: arial;
+  width: calc(100% - 210px); /** containers width - img width - margin-left **/
+  margin-left: 10px;
+  white-space: normal;
+  vertical-align: top;
+}
+@media (max-width: 768px) {
+.ind-p-box {
+  position: relative; 
+  display: block; 
+  padding-bottom: 50px; 
+  height: 300px;
+}
+.ind-abs-box {
+  margin-left: 200px; 
+  width: 300px; 
+  position: absolute;
+}
+.draw {
+  height: 200px; 
+  width: 200px; 
+  background-color: silver; 
+  display: inline-block; 
+  position: relative; 
+  float: left;
+}
+.parag {
+  width: 300px; 
+  display: inline-block; 
+  float: left; 
+  position: relative;
+}
+.ind-abs-box-2 {
+  margin-left: 9%; 
+  margin-right: 9%; 
+  margin-top: 30px; 
+  position: relative;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+div.draw-2 {
+  height: 200px; 
+  width: 200px;
+  margin: auto;
+  display: block; 
+  background-color: #c8e1e8ff;
+  /*display: inline-block; 
+  position: absolute;
+  top: 0px;*/
+}
+.parag-2 {
+  display: block; 
+  font-size: 16px;
+  font-family: arial;
+  width: 100%;
+  margin-left: 10px;
+  white-space: normal;
+}
+}

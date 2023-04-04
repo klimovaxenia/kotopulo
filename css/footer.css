@@ -19,6 +19,8 @@
   text-decoration: none;
   color: white;
   padding: 10px 10px;
+  font-size: 16px;
+  font-family: arial;
 }
 @media (max-width: 423px) {
 .footer-box-1 {

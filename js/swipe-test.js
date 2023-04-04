@@ -161,6 +161,7 @@ function touchEnd() {
     console.log("Array: " + dots[i]);
 
     setPositionByIndex()
+    
     touchDots[currentIndex].className += " active";
     hideArrow();
 
